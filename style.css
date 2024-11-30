@@ -1,0 +1,35 @@
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(127deg, rgb(106, 107, 107) 0%, rgb(114, 114, 192) 100%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; /* Added to vertically center the container */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.container {
+    background-color: rgb(236, 159, 233);
+    border: none;
+    padding: 3%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width to prevent overflow */
+}
+.btn {
+    background: rgba(0, 0, 72, 1);
+    border-radius: 5%;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+    .btn {
+        width: auto; /* Reset the width for larger screens */
+        padding: 10px;
+    }
+}
